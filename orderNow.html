@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>OrderNow</title>
+     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     
+     
+     <style>
+       body{
+        background-image: linear-gradient(45deg, #00dbde, #fc00ff);
+
+       }
+
+input[type=text], select, textarea, input[type=email], input[type=number]{
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  
+  resize: vertical;
+}
+.btn{
+  background-image: linear-gradient(45deg, #00dbde, #fc00ff);
+  color: rgb(231, 236, 241);
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: 4rem rgb(6, 65, 65);
+  border-radius: 4px;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: black;
+  color: black;
+  opacity: .8;
+}
+h1{
+  text-align: center;
+   font-weight:700;
+   color: rgb(231, 236, 241);
+   
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 60%;
+  height: 60%;
+  margin-left: 220px;
+ 
+} 
+        
+     </style>
+    </head>
+<body>
+      <h1>Order Form</h1>
+
+  <div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name">
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email">
+
+      <label for="num">No. of Products</label>
+      <input type="number" id="num" name="num" placeholder="">
+  
+      <label for="country">Payment Method</label>
+      <select id="country" name="country">
+        <option value="australia">online</option>
+        <option value="canada">cash on delivery</option>
+      </select>
+  
+      <label for="subject">Address</label>
+      <textarea id="subject" name="subject" placeholder="Address" style="height:200px"></textarea>
+  
+   
+      <a href="Confirmed.html" class="btn">Place Order</a>
+  
+    </form>
+  </div> 
+
+  <div style="color:aliceblue; height: 90px;"></div>
+
+</body>
+   
+</html>
